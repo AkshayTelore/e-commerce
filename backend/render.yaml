@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: your-backend-name
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: DATABASE_URL
+        value: "postgresql://root:zaEQmLXVyEmP3lJJv5jJyQNkCVHK0OjI@dpg-d06e0epr0fns73fhg2kg-a.singapore-postgres.render.com/z_97f5"
